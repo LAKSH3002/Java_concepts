@@ -1,9 +1,8 @@
 import java.awt.*;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
-public class CALCULATOR_JAVA extends Frame implements ActionListener {
-    // declare objects
-    // no jframe because we are not using swing
+public class CALCULATOR_JAVA extends Frame implements ActionListener 
+{
     Frame f = new Frame("CALCULATOR");
     Label l1, l2, l3, l0;
     TextField t1, t2, t3;
@@ -62,7 +61,6 @@ public class CALCULATOR_JAVA extends Frame implements ActionListener {
         b4.addActionListener(this);
         b5.addActionListener(this);
 
-        // setDefaultcloseoperation is there only in Jframe package
         f.setBounds(250, 80, 700, 500);
         f.setLayout(null);
         f.setVisible(true);
