@@ -1,0 +1,49 @@
+package com.learning;
+
+class Student
+{
+    private int marks,roll;
+    private String name;
+    // setter methods
+    // set marks , roll ,name
+    void setMarks(int m)
+    {
+       marks = m;
+    }
+    void setRoll(int r)
+    {
+        roll = r;
+    }
+    void setName(String n)
+    {
+        name = n;
+    }
+    // getter methods
+    // get marks name and roll number
+    // display it on the screen.
+    int getMarks()
+    {
+        return marks;
+    }
+    String getName()
+    {
+        return name;
+    }
+    int getRoll()
+    {
+        return roll;
+    }
+}
+public class encapsule2
+{
+    public static void main(String[] args) {
+    Student s = new Student();
+    s.setMarks(100);
+    s.setRoll(57);
+    s.setName("LAKSH");
+
+        System.out.println(s.getMarks());
+        System.out.println(s.getRoll());
+        System.out.println(s.getName());
+    }
+}
