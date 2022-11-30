@@ -1,3 +1,4 @@
+import java.util.Scanner;
 interface marvel{
     void hits();
     void superhits();
