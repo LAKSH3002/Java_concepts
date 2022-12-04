@@ -1,0 +1,89 @@
+package cafe.stages;
+import java.awt.*;
+import javax.swing.*;
+import java.awt.event.ActionEvent;
+import javax.swing.event.*;
+import java.awt.event.ActionListener;
+import java.util.Date;
+import java.util.Scanner;
+public class home_page extends JFrame
+{
+    JFrame j;
+    JButton b1,b2,b3,b4,b5,b6,b7,b8,b9,b10,b11,b12;
+    ImageIcon i;
+    home_page() {
+      j = new JFrame("CREAM CENTRE");
+      j.setVisible(true);
+      j.setLayout(null);
+      j.setBounds(250, 90, 740, 500);
+      j.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+      JPanel p = new JPanel();
+      p.setBounds(0, 0, 200, 500);
+      p.setBackground(Color.gray);
+      j.add(p);
+
+      JLabel l = new JLabel("CREAM");
+      JLabel l2 = new JLabel("CENTER");
+      l.setBounds(50, 180, 40, 100);
+      l2.setBounds(75, 280, 40, 100);
+      p.add(l);
+      p.add(l2);
+
+      JLabel l1 = new JLabel("SELECT CATEGORIES:");
+      j.add(l1);
+      l1.setBounds(220, 10, 150, 30);
+
+      b1 = new JButton("STARTERS");
+      j.add(b1);
+      b1.setBounds(220, 70, 100, 30);
+
+      b2 = new JButton("MAIN COURSE");
+      j.add(b2);
+      b2.setBounds(340, 70, 120, 30);
+
+      b3 = new JButton("SANDWICHES");
+      j.add(b3);
+      b3.setBounds(480, 70, 120, 30);
+
+      b4 = new JButton("SOUP");
+      j.add(b4);
+      b4.setBounds(620, 70, 80, 30);
+
+      b5 = new JButton("PASTA");
+      j.add(b5);
+      b5.setBounds(220, 130, 100, 30);
+
+      b6 = new JButton("CHINESE");
+      j.add(b6);
+      b6.setBounds(340, 130, 120, 30);
+
+      b7 = new JButton("MEXICAN");
+      j.add(b7);
+      b7.setBounds(480, 130, 120, 30);
+
+      b8 = new JButton("PIZZA");
+      j.add(b8);
+      b8.setBounds(620, 130, 80, 30);
+
+      b9 = new JButton("DESSERTS");
+      j.add(b9);
+      b9.setBounds(220, 190, 100, 30);
+
+      b10 = new JButton("MOCKTAILS");
+      j.add(b10);
+      b10.setBounds(340, 190, 120, 30);
+
+      b11 = new JButton("MILKSHAKES");
+      j.add(b11);
+      b11.setBounds(480, 190, 120, 30);
+
+      b12 = new JButton("JUICES");
+      j.add(b12);
+      b12.setBounds(620, 190, 80, 30);
+    }
+    public static void main(String[] args)
+    {
+       new home_page();
+    }
+}
