@@ -1,0 +1,30 @@
+// lambda expression
+
+@FunctionalInterface
+    interface horn{
+        void blowHorn();
+        //void blowH();
+    }
+
+    class laksh implements horn{
+        @Override
+        public void blowHorn() {
+            System.out.println("THIS IS A METHOD");
+        }
+    }
+    
+    public class lambda__
+    {
+    public static void main(String[] args) {
+
+        // LAMBDA EXPRESSIONS
+
+//        horn o = new laksh();
+//        o.blowHorn();
+
+        horn obj = ()->{
+            System.out.println("METHODDDDD 1");
+        };
+        obj.blowHorn();
+    }
+}
