@@ -1,0 +1,53 @@
+// Anonymous classes
+
+    interface horn{
+        void blowHorn();
+        void blowH();
+    }
+
+    class laksh implements horn{
+        @Override
+        public void blowHorn() {
+            System.out.println("THIS IS A METHOD");
+        }
+    }
+    
+    class Anodemo implements horn{
+        void display()
+        {
+            System.out.println("HELLO");
+        }
+
+        @Override
+        public void blowHorn() {
+            System.out.println("METH 1");
+        }
+
+        @Override
+        public void blowH() {
+            System.out.println("METH 2");
+        }
+    }
+    
+    public class lambda__
+    {
+    public static void main(String[] args) {
+//        Anodemo  a = new Anodemo();
+//        a.blowHorn();
+
+        // interface reference -  Anonymous class
+     horn obj = new horn() {
+            @Override
+            public void blowHorn() {
+                System.out.println("I AM METH1");
+            }
+
+            @Override
+            public void blowH() {
+                System.out.println("I AM METH 2");
+            }
+        };
+       obj.blowHorn();
+
+    }
+}
